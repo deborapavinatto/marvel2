@@ -1,0 +1,167 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: $backgroundColor;
+}
+
+header {
+    @include flexCenter(space-between);
+    width: inherit;
+    height: 80px;
+    background: $primaryColor;
+
+    strong {
+        font-size: 2em;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+
+    input {
+        width: 500px;
+        height: 30px;
+        margin-right: 160px;
+        border-radius: 5px;
+        outline: 0;
+        border: none;
+    }
+}
+
+.position--showCharacters {
+    @include flexCenter(center);
+    width: inherit;
+
+    .showCharacters {
+        @include flexDirection(row);
+        flex-wrap: wrap;
+        width: inherit;
+        background: #0ff;
+    
+        .character {
+            @include flexCenter(center);
+            flex-direction: column;
+            //width: 20%;
+            //height: 270px;
+            width: 260px;
+            height: 300px;
+            margin: 4px;
+            //margin: ;
+            //border: 2px solid #000;
+    
+            .characterName {
+                @include flexCenter(center);
+                width: 260px;
+                height: 300px;
+                //width: 80px;
+                //height: 80px;
+                //background: #fff;
+                border: 1px solid #000;
+                //border-top: none;
+                border-radius: 0 0 20px 20px;
+                //position: absolute;
+                cursor: pointer;
+                background: #fff;
+
+                p {
+                font-size: .8em;
+               // transition: .5s ease;
+               // opacity: 0;
+             //   position: absolute;
+                //top: 50%;
+                //left: 50%;
+                //transform: translate(-50%, -50%);
+               // text-align: center;
+                color: #fff;
+                }
+            }
+    
+            img {
+                width: inherit;
+                height: 88%;
+                cursor: pointer;
+                
+                border-radius: 10px 10px 0 0;
+               // opacity: 1;
+                //display: block;
+                //width: 100%;
+                //height: auto;
+                //transition: .5s ease;
+                //backface-visibility: hidden;
+            }
+
+        }
+
+        //.character:hover {
+            //position: absolute;
+            //transition: 2s;
+            //display: none;
+         //   background: #000;
+        //}
+    }
+}
+
+.characterInfoPage {
+    background: brown;
+    width: 100vw;
+    //height: 100vh;
+    .characterInfoPage--pageTop {
+        @include flexDirection(row);
+
+        .characterName {
+            font-size: 2.2em;
+        }
+
+        .characterDescription {
+            font-size: 1.6em;
+        }
+    }
+
+    img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .comics {
+        @include flexDirection(row);
+        flex-wrap: wrap;
+        
+        .comicsInfo {
+            margin: 9px;
+            border: 1px solid #000;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+.position--pagination {
+    @include flexCenter(center);
+    width: inherit;
+
+    .pagination {
+        @include flexDirection(row);
+        width: inherit;
+        flex-wrap: wrap;
+        background: cadetblue;
+        .page-link {
+            font-size: 1.4em;
+            margin: 10px;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.hidden {
+    display: none !important;
+}

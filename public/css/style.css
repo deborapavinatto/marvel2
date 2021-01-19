@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f7;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: inherit;
+  height: 80px;
+  background: #5f9ea0;
+}
+
+header strong {
+  font-size: 2em;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+header input {
+  width: 500px;
+  height: 30px;
+  margin-right: 160px;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+
+.position--showCharacters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: inherit;
+}
+
+.position--showCharacters .showCharacters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: inherit;
+  background: #0ff;
+}
+
+.position--showCharacters .showCharacters .character {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 260px;
+  height: 300px;
+  margin: 4px;
+}
+
+.position--showCharacters .showCharacters .character .characterName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 260px;
+  height: 300px;
+  border: 1px solid #000;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.position--showCharacters .showCharacters .character .characterName p {
+  font-size: .8em;
+  color: #fff;
+}
+
+.position--showCharacters .showCharacters .character img {
+  width: inherit;
+  height: 88%;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+
+.characterInfoPage {
+  background: brown;
+  width: 100vw;
+}
+
+.characterInfoPage .characterInfoPage--pageTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.characterInfoPage .characterInfoPage--pageTop .characterName {
+  font-size: 2.2em;
+}
+
+.characterInfoPage .characterInfoPage--pageTop .characterDescription {
+  font-size: 1.6em;
+}
+
+.characterInfoPage img {
+  width: 350px;
+  height: 350px;
+}
+
+.characterInfoPage .comics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.characterInfoPage .comics .comicsInfo {
+  margin: 9px;
+  border: 1px solid #000;
+}
+
+.characterInfoPage .comics .comicsInfo img {
+  width: 150px;
+  height: 150px;
+}
+
+.position--pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: inherit;
+}
+
+.position--pagination .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: inherit;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: cadetblue;
+}
+
+.position--pagination .pagination .page-link {
+  font-size: 1.4em;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+$primaryColor: #5f9ea0;
+$secundaryColor: #00f;
+$neutraColor: #333;
+$colorText: #f0f0f7;
+$colorLink: #f98;
+$backgroundColor: #f0f0f7;
+
+@mixin flexCenter($jusfify_content) {
+    display: flex;
+    justify-content: $jusfify_content;
+    align-items: center;
+}
+
+@mixin flexDirection($flex_direction) {
+    display: flex;
+    flex-direction: $flex_direction;
+}
